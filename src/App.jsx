@@ -7,15 +7,19 @@ import Signup from "./Components/Signup";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
 import Feed from "./Components/Feed";
+import MentorProfile from "./Components/MentorProfile";
+import AdminProfile from "./Components/AdminProfile";
 // import Sidebar from "./Components/Sidebar";
 
 function App() {
   return (
     <div className="Appp" style={{ margin: "-8px" }}>
-    
       <Navigation />
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/adminprofile" element={<AdminProfile />} />
+
+        <Route path="/profile" element={<MentorProfile />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/about" element={<About />} />

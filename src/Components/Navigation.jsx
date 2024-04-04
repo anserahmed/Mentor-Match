@@ -12,7 +12,6 @@ export default function Navigation() {
             </span>
           </Link>
 
-        
           {/* <div id="search-bar" class="self-center rounded-md">
             <input
               type="text"
@@ -26,7 +25,6 @@ export default function Navigation() {
               Search
             </button>
           </div> */}
-         
 
           <div class="flex items-center pt-2 lg:order-2">
             <Link
@@ -36,24 +34,26 @@ export default function Navigation() {
               Login <i class="ri-login-box-line"></i>
             </Link>
 
-            {/* <!-- Profile  --> */}
-            <div class="relative ml-3">
+            {/* <!-- Profile icon  --> */}
+            <div class="relative ml-3 hover:focus:ring-red-600">
               <div>
-                <button
+                <Link
+                  to="/profile"
                   type="button"
-                  class="relative flex rounded-full bg-zinc-600 text-sm focus:outline-none focus:ring-1 focus:ring-zinc-600 focus:ring-offset-2 focus:ring-offset-zinc-800"
+                  class="relative flex rounded-full bg-zinc-600 text-sm focus:outline-none focus:ring-1 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-zinc-800"
                   id="user-menu-button"
                   aria-expanded="false"
                   aria-haspopup="true"
                 >
-                  <span class="absolute -inset-1.5"></span>
-                  <span class="sr-only">Open user menu</span>
+                  {" "}
+                  <span class="absolute -inset-1.5 hover:focus:ring-red-600"></span>
+                  <span class="sr-only hover:focus:ring-red-600">Open user menu</span>
                   <img
-                    class="h-8 w-8 rounded-full"
+                    class="h-8 w-8 rounded-full hover:focus:ring-red-600"
                     src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     alt=""
                   />
-                </button>
+                </Link>
               </div>
             </div>
           </div>
